@@ -39,7 +39,7 @@ fn test_link_list() {
     list = list.prepend(1);
     list = list.prepend(2);
     list = list.prepend(3);
-    println!("this link-list's length is {}", list.len());
+    println!("this link-list's length is  {}", list.len());
     println!("this link-list's context is {}", list.stringify());
 
     static LANGUAGE: &'static str = "RustCoding";

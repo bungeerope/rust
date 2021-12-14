@@ -28,4 +28,7 @@ fn main() {
 
     let list = main::List(vec![4, 5, 6]);
     println!("list: {}", list);
+
+    let city = main::City { name: "city", lat: 126.00334, lon: 123.8873747 };
+    println!("{}", city);
 }

@@ -17,18 +17,29 @@ impl fmt::Display for List {
     }
 }
 
-
 pub struct City {
     pub name: &'static str,
     pub lat: f32,
     pub lon: f32,
 }
 
-
 impl fmt::Display for City {
     fn fmt(&self, f: &mut Formatter<'_>) -> fmt::Result {
         let lat_char = if self.lat >= 0.0 { 'N' } else { 'S' };
         let lon_char = if self.lon >= 0.0 { 'E' } else { 'W' };
         write!(f, "{}: {:.3}°{} {:.3}°{}", self.name, self.lat.abs(), lat_char, self.lon, lon_char)
+    }
+}
+
+#[derive(Debug)]
+pub struct Color {
+    pub red: u8,
+    pub green: u8,
+    pub blue: u8,
+}
+
+impl fmt::Display for Color {
+    fn fmt(&self, f: &mut Formatter<'_>) -> fmt::Result {
+        write!(f, "R:{} G:{} B:{}", self.red, self.green, self.blue)
     }
 }

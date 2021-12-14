@@ -54,5 +54,9 @@ fn main() {
     println!("1 + 2 = {}", 1u32 + 2);
 
     let res = guessing::tuple::reverse((1, true));
-    println!("({},{})", res.0, res.1)
+    println!("({},{})", res.0, res.1);
+
+    let mut slice = [0; 10];
+    slice[1] = 32i32;
+    guessing::slice::slice::analyze_slice(&slice[1..3]);
 }

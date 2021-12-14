@@ -53,10 +53,10 @@ fn main() {
     // 字面量和字符串
     println!("1 + 2 = {}", 1u32 + 2);
 
-    let res = guessing::tuple::reverse((1, true));
+    let res = guessing::_1_tuple::reverse((1, true));
     println!("({},{})", res.0, res.1);
 
     let mut slice = [0; 10];
     slice[1] = 32i32;
-    guessing::slice::slice::analyze_slice(&slice[1..3]);
+    guessing::_2_slice::slice::analyze_slice(&slice[1..3]);
 }

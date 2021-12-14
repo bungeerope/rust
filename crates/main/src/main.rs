@@ -49,4 +49,10 @@ fn main() {
         println!("{:?}", *color);
         println!("RGB({}, {}, {}) 0x{:02X}{:02X}{:02X}", color.red, color.green, color.blue, color.red, color.green, color.blue);
     }
+
+    // 字面量和字符串
+    println!("1 + 2 = {}", 1u32 + 2);
+
+    let res = guessing::tuple::reverse((1, true));
+    println!("({},{})", res.0, res.1)
 }

@@ -4,17 +4,18 @@ struct Person<'a> {
     age: u8,
 }
 
-struct Nil;
+pub struct Nil;
 
-struct Pair(i32, i32);
+pub struct Pair(i32, i32);
 
-struct Point {
+#[allow(dead_code)]
+pub struct Point {
     x: i32,
     y: i32,
 }
 
-// #[allow(dead_code)]
-struct Rectangle {
+#[allow(dead_code)]
+pub struct Rectangle {
     pox: Point,
     poy: Point,
 }

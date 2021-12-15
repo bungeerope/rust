@@ -1,3 +1,5 @@
+mod linklist;
+
 #[allow(dead_code)]
 #[derive(Debug)]
 enum Status {

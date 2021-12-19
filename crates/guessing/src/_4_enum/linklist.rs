@@ -47,4 +47,13 @@ fn test_link_list() {
     const THRESHOLD: i32 = 10;
 
     println!("this language is {}", LANGUAGE);
+
+    let mut multi_integer = 7i32;
+    {
+        println!("{}", multi_integer);
+        let multi_integer = multi_integer;
+        println!("{}", multi_integer);
+    }
+    multi_integer = 50;
+    println!("{}", multi_integer)
 }
